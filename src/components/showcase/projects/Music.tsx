@@ -1,14 +1,16 @@
 import React, { useState } from 'react';
 // @ts-ignore
-import house from '../../../assets/audio/house_master.mp3';
+// import house from '../../../assets/audio/house_master.mp3';
 // @ts-ignore
-import edge from '../../../assets/audio/edge_unmastered.mp3';
+// import edge from '../../../assets/audio/edge_unmastered.mp3';
 // @ts-ignore
-import dnb from '../../../assets/audio/break.mp3';
+// import dnb from '../../../assets/audio/break.mp3';
 // @ts-ignore
-import dnbDrums from '../../../assets/audio/dnb_drop_drums.mp3';
-import houseProject from '../../../assets/pictures/projects/audio/houseProject.png';
-import dnbDrumsProject from '../../../assets/pictures/projects/audio/dnbDrumsProject.png';
+import deathNote from '../../../assets/audio/death_note.mp3';
+// @ts-ignore
+// import dnbDrums from '../../../assets/audio/dnb_drop_drums.mp3';
+// import houseProject from '../../../assets/pictures/projects/audio/houseProject.png';
+// import dnbDrumsProject from '../../../assets/pictures/projects/audio/dnbDrumsProject.png';
 import { MusicPlayer } from '../../general';
 
 export interface MusicProjectsProps {}
@@ -23,22 +25,18 @@ const MusicProjects: React.FC<MusicProjectsProps> = (props) => {
             <br />
             <div className="text-block">
                 <p>
-                    Music has been a passion of mine for my whole life. When I
-                    was 15 years old, I downloaded FL Studio and started to
-                    produce my own music. I found a wonderful community on
-                    reddit called r/edmproduction and in 2016 created the now
-                    popular discord server EDM Production with over 14k members.
+                Listening to music is a deep passion of mine, 
+                and I have cultivated a distinct and varied taste in the genres and styles I enjoy. 
+                Music plays a significant role in my life, 
+                providing both a source of relaxation and a means of emotional expression. 
+                Whether it’s the intricate melodies of classical compositions, 
+                the rhythmic beats of contemporary genres, or the nostalgic tunes of past decades, 
+                I find that each style offers its own unique experience and connection. 
+                My appreciation for music extends beyond mere listening; I actively seek out new sounds and artists, continuously expanding my musical 
+                horizons.
                 </p>
                 <br />
-                <p>
-                    I don't release the music that I make publicly as I not only
-                    find it difficult to finish songs, but also it's not a
-                    priority of mine since I produce mostly because I enjoy the
-                    process of learning and creating. However if I am going to
-                    dedicate a whole page of my portfolio to my music, you bet
-                    I'll have some examples to showoff.
-                </p>
-                <br />
+                
                 <p>
                     Below are some more recent Musical Endeavors I've been
                     working on. I hope you enjoy the music and enjoy the stories
@@ -48,30 +46,24 @@ const MusicProjects: React.FC<MusicProjectsProps> = (props) => {
             <h2>Exploring house</h2>
             <br />
             <p>
-                In 2020 I went through a phase of really enjoying house. Some of
-                my favorite artists at the time were Malaa, Chirs Lake, Kyle
-                Walker and many more. Inspired, I decided to take a stab at
-                making some house tracks.
-            </p>
-            <br />
-            <p>
-                I failed a few times as I wasn't really able to nail the style
-                and groove I was going for but ultimately ended up creating the
-                piece below.
+            The theme song for the anime series "Death Note" is "The World," performed by the Japanese rock band Nightmare. 
+            This song is widely recognized for its dark, intense atmosphere, which complements the series' themes of morality, justice, and psychological tension. 
+            "The World" features a driving rhythm and dramatic instrumentation that effectively capture the series' somber and suspenseful mood, reflecting the high-stakes battle of wits between the characters. 
+            The music enhances the show's gripping narrative, adding depth to the psychological and philosophical conflicts explored throughout the series.
             </p>
             <br />
 
             <MusicPlayer
-                src={house}
-                title="Timeless"
-                subtitle="Henry Heffernan - 2022"
+                src={deathNote}
+                title="Theme"
+                subtitle="Death Note - 2006/2007"
                 currentSong={currentSong}
                 setCurrentSong={setCurrentSong}
             />
 
             <br />
             <br />
-            <div className="captioned-image">
+            {/* <div className="captioned-image">
                 <img src={houseProject} alt="" />
                 <p>
                     <sub>
@@ -112,7 +104,7 @@ const MusicProjects: React.FC<MusicProjectsProps> = (props) => {
             <MusicPlayer
                 src={edge}
                 title="Edge [W.I.P.]"
-                subtitle="Henry Heffernan - 2021"
+                subtitle="Yesu Balla - 2021"
                 currentSong={currentSong}
                 setCurrentSong={setCurrentSong}
             />
@@ -150,7 +142,7 @@ const MusicProjects: React.FC<MusicProjectsProps> = (props) => {
             <MusicPlayer
                 src={dnb}
                 title="Break [Demo]"
-                subtitle="Henry Heffernan - 2019/2022"
+                subtitle="Yesu Balla - 2019/2022"
                 currentSong={currentSong}
                 setCurrentSong={setCurrentSong}
             />
@@ -168,7 +160,7 @@ const MusicProjects: React.FC<MusicProjectsProps> = (props) => {
             <MusicPlayer
                 src={dnbDrums}
                 title="Break [Drums and Sub]"
-                subtitle="Henry Heffernan - 2019/2022"
+                subtitle="Yesu Balla - 2019/2022"
                 currentSong={currentSong}
                 setCurrentSong={setCurrentSong}
             />
@@ -204,7 +196,7 @@ const MusicProjects: React.FC<MusicProjectsProps> = (props) => {
                 something I am proud of over these last few years. I also want
                 to one day make an album, but that is a long ways away.
             </p>
-            <br />
+            <br /> */}
             <p>
                 I am aware this section of my portfolio is rather short, but
                 it's because I am very selective with what I want to show off to

@@ -1,10 +1,10 @@
 import React from 'react';
 // @ts-ignore
-import saga from '../../../assets/pictures/projects/software/saga.mp4';
+import nxtwatch from '../../../assets/pictures/projects/software/nxtwatch.mp4';
 // @ts-ignore
 import computer from '../../../assets/pictures/projects/software/computer.mp4';
 // @ts-ignore
-import scroll from '../../../assets/pictures/projects/software/scroll.mp4';
+import nxttrendz from '../../../assets/pictures/projects/software/nxttrendz.mp4';
 import ResumeDownload from '../ResumeDownload';
 import VideoAsset from '../../general/VideoAsset';
 
@@ -24,18 +24,17 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
             <ResumeDownload />
             <br />
             <div className="text-block">
-                <h2>henryheffernan.com</h2>
+                <h2>yesuballa.com</h2>
                 <br />
                 <p>
-                    henryheffernan.com is my portfolio website, and also the
+                    yesuballa.com is my portfolio website, and also the
                     website you are on right now. This project was an absolute
                     joy to make and challenged me both technically and
-                    creatively. Early in 2022, I knew I wanted to make an
+                    creatively. Early in 2024, I knew I wanted to make an
                     interactive portfolio to aid my job search. I eventually got
-                    the idea for this site around early February and began
-                    development early March. I've been developing it alongside
-                    my last semester at school and if you are reading this, it's
-                    pretty much done!
+                    the idea for this site around early May and began
+                    development early June. I have been developing it in parallel with my React course, and if you are reading this, 
+                    it is essentially complete.
                 </p>
                 <br />
                 <div className="captioned-image">
@@ -118,56 +117,60 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                     I'm skipping over a lot of details in exchange for brevity,
                     but I do plan on doing a more in depth breakdown for those
                     interested sometime in the future. To get updates with that
-                    project feel free to follow me on twitter{' '}
+                    project feel free to follow me on LinkedIn{' '}
                     <a
                         rel="noreferrer"
                         target="_blank"
-                        href="https://twitter.com/henryheffernan"
+                        href="https://www.linkedin.com/in/yesuballa/"
                     >
-                        @henryheffernan
+                        @yesuballa
                     </a>
                 </p>
             </div>
             <div className="text-block">
-                <h2>Guntattchment Saga The Sequel</h2>
+                <h2>Nxt Watch</h2>
+                <br />
                 <br />
                 <p>
-                    Guntattchment Saga or GSTS is a game I made with my good
-                    friend Scott Bass back in 2019. The game is a wave based top
-                    down shooter where you progress by building the most
-                    outrageous of weapons through attaching as many attachments
-                    on your weapon as you can. The game ceased development in
-                    2019 because we unfortunately both had packed school
-                    schedules and were unable to find the time to work on it.
+                Implemented Nxt Watch application which is a clone for YouTube where users can log in and can see a list of
+                videos like Trending, Gaming, Saved videos, and also can search videos and view specific video details, and
+                users can toggle the theme (Light/Dark).
+                <br />
+                <br />
+                *Implemented Different pages like Login, Home, Trending, Gaming, Saved videos using React
+                components, props, state, lists, event handlers, form inputs.
+                <br />
+                <br />
+                *Authenticating by taking username, password and doing login post HTTP API Call.
+                <br />
+                <br />
+                *Persisted user login state by keeping jwt token in local storage, Sending it in headers of further API calls
+                to authorize the user.
+                <br />
+                <br />
+                *Implemented different routes for Login, Home, Trending, Gaming, Saved videos, Video item details
+                pages by using React Router components Route, Switch, Link.
+                <br />
+                <br />
+                *Redirecting to the login page if the user tries to open Home, Trending, Gaming, Saved videos, Video
+                item details routes which need authentication by implementing protected Route.
+                <br />
                 </p>
                 <br />
                 <div className="captioned-image">
-                    <VideoAsset src={saga} />
+                    <VideoAsset src={nxtwatch} />
                     <div style={styles.caption}>
                         <p>
                             <sub>
-                                <b>Figure 2: </b> Guntattchment Saga Gameplay
-                                demo, featuring the main character along with a
-                                few of our grunt and dasher enemies.
+                                <b>Figure 2: </b> The Nxt Watch application is a professional YouTube clone with similar video streaming features.
                             </sub>
                         </p>
                     </div>
                 </div>
                 <p>
-                    Guntattchment Saga was a really fun project to work on and
-                    had a multitude of challenges. An interesting challenge that
-                    you may not even notice was the rotation of objects such as
-                    the players weapon. Rotating pixel art is a very difficult
-                    thing to do because in the world of pixels you are dealing
-                    with such a little amount of information. Even a single
-                    misplaced pixel can cause a sprite to read in a totally
-                    different and unintended way. To deal with this we developed
-                    an algorithm to prioritize outlines, while rotating the
-                    insides with a simple Nearest Neighbor algorithm. Doing so
-                    resulted in a relatively readable sprite when rotating
-                    sprites. It was a surprisingly difficult challenge as it
-                    intersected both art and programming, but was fun to work on
-                    overall.
+                <br />
+                Technologies used: React JS, JS, CSS, Bootstrap, Routing, REST API Calls, Local Storage, JWT Token,
+                Authorization, Authentication.
                 </p>
                 <br />
                 <h3>Links:</h3>
@@ -176,11 +179,10 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                         <a
                             rel="noreferrer"
                             target="_blank"
-                            href="https://github.com/scottbass47/gsts"
+                            href="https://yesuwatch.ccbp.tech/"
                         >
                             <p>
-                                <b>[GitHub]</b> - Guntattchment Saga The Sequel
-                                Unity Repository
+                                <b>[Site]</b> - Nxt Watch
                             </p>
                         </a>
                     </li>
@@ -188,54 +190,48 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                         <a
                             rel="noreferrer"
                             target="_blank"
-                            href="https://github.com/henryjeff/gsts_assets"
+                            href="https://github.com/YesuBalla/Nxt-Watch-App.git"
                         >
                             <p>
-                                <b>[GitHub]</b> - Guntattchment Saga The Sequel
+                                <b>[GitHub]</b> - Nxt Watch
                                 Assets Repository
                             </p>
                         </a>
                     </li>
                 </ul>
-                <p>
-                    Unfortunately, the game currently is not in a releasable
-                    state and so there is no demo available online. If this ever
-                    changes, however, a link to the game will be added here.
-                </p>
             </div>
             <div className="text-block">
-                <h2>Skip the Scroll</h2>
+                <h2>Nxt Trendz ( ECommerce Clone - Amazon, Flipkart)</h2>
                 <br />
                 <p>
-                    While working at Hover, I spent a lot of time on GitHub
-                    issue pages looking for answers and solutions to problems I
-                    had run into. I would always find myself sifting though the
-                    comments trying to find the right answer, which usually had
-                    the most upvotes and positive reactions. With that
-                    information, I decided to create a very simple chrome
-                    extension that would sift through all the comments on the
-                    page, sort them by positive reactions, and then allow you to
-                    traverse them from most positive reactions to least positive
-                    reactions.
+                Implemented Nxt Trendz application which is a clone for ECommerce applications like Amazon, Flipkart where
+                users can login and can see list of products with search, filters, sort by, etc..
+                <br />
+                <br />
+                *Implemented Different pages and routes for Login, Products, Product details using React Router
+                components Route, Switch, Link, props, state, lists, event handlers, form inputs.
+                <br />
+                <br />
+                *Authenticating and authorizing users by taking username, password and doing login POST HTTP API
+                Call and implementing filters by sending them as query parameters to product api calls.
+                <br />
+                <br />
+                *Persisted user login state by keeping jwt token in local storage, Sending it in headers of further api calls
+                to authorize the user. 
                 </p>
                 <br />
                 <div className="captioned-image">
-                    <VideoAsset src={scroll} />
+                    <VideoAsset src={nxttrendz} />
                     <p style={styles.caption}>
                         <sub>
-                            <b>Figure 3:</b> Skip the Scroll in action, finding
-                            the highest rated comments and scrolling right to
-                            them
+                            <b>Figure 3:</b> A sleek eCommerce app with user login, product listings, 
+                            search, and sorting features.
                         </sub>
                     </p>
                 </div>
                 <p>
-                    The extension is open source and currently released on the
-                    Chrome web store. Skip the Scroll is obviously not a project
-                    with massive scope, but was fun to make and dive into the
-                    world of browser extensions. I wanted to showcase since it's
-                    a developer tool and I wanna give it some visibility for
-                    those who might find it useful.
+                Technologies used: React JS, JS, CSS, Bootstrap, Routing, REST API Calls, Local Storage, JWT Token,
+                Authorization, Authentication
                 </p>
                 <br />
                 <h3>Links:</h3>
@@ -244,10 +240,10 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                         <a
                             rel="noreferrer"
                             target="_blank"
-                            href="https://github.com/henryjeff/skip-the-scroll"
+                            href="https://nxttrndsbyk.ccbp.tech/"
                         >
                             <p>
-                                <b>[GitHub]</b> - Skip the Scroll Repository
+                                <b>[Site]</b> - Nxt Trendz
                             </p>
                         </a>
                     </li>
@@ -258,18 +254,15 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                             href="https://chrome.google.com/webstore/detail/skip-the-scroll/mfehannpjmgfagldoilpngeoecdfgmnd"
                         >
                             <p>
-                                <b>[Chrome Web Store]</b> - Skip the Scroll
+                                <b>[GitHub]</b> - Nxt Trendz
+                                Assets Repository
                             </p>
                         </a>
                     </li>
                 </ul>
                 <p>
-                    If you are a developer and have also found yourself
-                    scrolling through github comment after github comment saying
-                    "i also have this problem...", then I highly recommend you
-                    check out Skip the Scroll to save you some of your precious
-                    time. If you like it, feel free to star it on GitHub and
-                    rate it on the Chrome web store.
+                Technologies used: React JS, JS, CSS, Bootstrap, Routing, REST API Calls, Local Storage, JWT Token,
+                Authorization, Authentication
                 </p>
             </div>
             <ResumeDownload />

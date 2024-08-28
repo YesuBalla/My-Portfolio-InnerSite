@@ -1,7 +1,7 @@
 import React from 'react';
 
 import girlRun from '../../../assets/pictures/projects/art/girl-run.gif';
-import gsts from '../../../assets/pictures/projects/art/gsts.png';
+// import gsts from '../../../assets/pictures/projects/art/gsts.png';
 
 export interface ArtProjectsProps {}
 
@@ -28,11 +28,8 @@ const ArtProjects: React.FC<ArtProjectsProps> = (props) => {
                 <h2>Pixel Art and Animation</h2>
                 <br />
                 <p>
-                    In high school, I started learning how to draw and animate
-                    pixel art after becoming interested in video game
-                    development. As I worked on making games over the years, I
-                    learned so much about pixel art and fell in love with
-                    animation.
+                After completing my 10th standard, I began studying pixel art and animation due to my interest in video game development. Through this process,
+                 I gained knowledge in pixel art and developed a passion for animation.
                 </p>
                 <br />
                 <div className="captioned-image">
@@ -44,7 +41,7 @@ const ArtProjects: React.FC<ArtProjectsProps> = (props) => {
                         </sub>
                     </p>
                 </div>
-                <p>
+                {/* <p>
                     I really started enjoying the work I was doing, and felt I
                     was improving a lot. Around 2017, I started to upload videos
                     of my work flow and animation process to YouTube just for
@@ -100,7 +97,7 @@ const ArtProjects: React.FC<ArtProjectsProps> = (props) => {
                     have some project plans and ideas in the works. Expect
                     updates to this page as I dive back into the world of pixel
                     art!
-                </p>
+                </p> */}
                 {/* <h3> Screen record time-lapses and make gifs</h3> */}
             </div>
         </div>
