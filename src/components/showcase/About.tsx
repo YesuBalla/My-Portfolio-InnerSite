@@ -45,7 +45,7 @@ const About: React.FC<AboutProps> = (props) => {
                     <img src={fellowAt} style={styles.image} alt="" />
                     <p>
                         <sub>
-                            <b>Figure 1:</b> An image that captures and represents who I am. :)
+                            <b>Figure 1:</b> An image that captures and represents what I am. :)
                         </sub>
                     </p>
                 </div>
