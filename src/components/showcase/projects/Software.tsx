@@ -128,7 +128,7 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                 </p>
             </div>
             <div className="text-block">
-                <h2>Nxt Watch</h2>
+                <h2>Nxt Watch(Youtube Clone)</h2>
                 <br />
                 <br />
                 <p>
