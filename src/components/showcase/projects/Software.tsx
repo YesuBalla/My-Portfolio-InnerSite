@@ -201,7 +201,7 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                 </ul>
             </div>
             <div className="text-block">
-                <h2>Nxt Trendz ( ECommerce Clone - Amazon, Flipkart)</h2>
+                <h2>Nxt Trendz(ECommerce Clone-Amazon,Flipkart)</h2>
                 <br />
                 <p>
                 Implemented Nxt Trendz application which is a clone for ECommerce applications like Amazon, Flipkart where
