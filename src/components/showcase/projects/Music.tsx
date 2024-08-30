@@ -200,8 +200,7 @@ const MusicProjects: React.FC<MusicProjectsProps> = (props) => {
             <p>
                 I am aware this section of my portfolio is rather short, but
                 it's because I am very selective with what I want to show off to
-                the world. I've been producing for over 6 years and have made
-                hundreds maybe even a thousand tracks/loops in that time. I only
+                the world. I only
                 recently have been feeling very content with the stuff I've made
                 and I'm very excited to see what I can do for the future. Thanks
                 for listening I hope you enjoyed!

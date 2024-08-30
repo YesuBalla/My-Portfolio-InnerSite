@@ -68,17 +68,7 @@ const About: React.FC<AboutProps> = (props) => {
                     <Link to="/projects/software">Software Projects</Link> page.
                 </p>
                 <br />
-                {/* <p>
-                    In 2017, I got accepted into Rennselear Polytechnic
-                    Institute to study Computer Science. It was my first choice
-                    and I was absolutely ecstatic to be going to such a great
-                    university. At the end of my sophomore year, I got an
-                    internship working for the startup Hover, primarily focusing
-                    on frontend work. I continued to work at Hover on and off
-                    for about a year and a half, until the start of my senior
-                    year when I decided to focus on other opportunities.
-                </p> */}
-                {/* <br /> */}
+
                 <br />
                 <div style={{}}>
                     <div

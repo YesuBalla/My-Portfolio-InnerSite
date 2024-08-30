@@ -24,10 +24,10 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
             <ResumeDownload />
             <br />
             <div className="text-block">
-                <h2>yesuballa.com</h2>
+                <h2>yesuballa.live</h2>
                 <br />
                 <p>
-                    yesuballa.com is my portfolio website, and also the
+                    yesuballa.live is my portfolio website, and also the
                     website you are on right now. This project was an absolute
                     joy to make and challenged me both technically and
                     creatively. Early in 2024, I knew I wanted to make an
@@ -56,7 +56,7 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                     <a
                         rel="noreferrer"
                         target="_blank"
-                        href="https://henryheffernan.vercel.app/"
+                        href="https://www.yesuballa.live/"
                     >
                         here
                     </a>{' '}
@@ -72,10 +72,10 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                         <a
                             rel="noreferrer"
                             target="_blank"
-                            href="https://henryheffernan.com"
+                            href="https://www.yesuballa.live/"
                         >
                             <p>
-                                <b>[3D Site]</b> - henryheffernan.com
+                                <b>[3D Site]</b> - yesuballa.live
                             </p>
                         </a>
                     </li>
@@ -83,10 +83,10 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                         <a
                             rel="noreferrer"
                             target="_blank"
-                            href="https://henryheffernan.vercel.app/"
+                            href="https://yesu-portfolio-innersite.netlify.app/"
                         >
                             <p>
-                                <b>[OS Site]</b> - henryheffernan.vercel.app
+                                <b>[OS Site]</b> - yesu-portfolio.netlify.app
                             </p>
                         </a>
                     </li>
@@ -94,7 +94,7 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                         <a
                             rel="noreferrer"
                             target="_blank"
-                            href="https://github.com/henryjeff/portfolio-website"
+                            href="https://github.com/YesuBalla/My-Portfolio.git"
                         >
                             <p>
                                 <b>[GitHub]</b> - 3D Site Repository
@@ -105,7 +105,7 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                         <a
                             rel="noreferrer"
                             target="_blank"
-                            href="https://github.com/henryjeff/portfolio-inner-site"
+                            href="https://github.com/YesuBalla/My-Portfolio-InnerSite.git"
                         >
                             <p>
                                 <b>[GitHub]</b> - OS Site Repository
