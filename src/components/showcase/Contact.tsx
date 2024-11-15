@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import colors from '../../constants/colors';
+// import colors from '../../constants/colors';
 // import twitterIcon from '../../assets/pictures/contact-twitter.png';
 import ghIcon from '../../assets/pictures/contact-gh.png';
 import inIcon from '../../assets/pictures/contact-in.png';
@@ -48,6 +48,7 @@ const Contact: React.FC<ContactProps> = (props) => {
         }
     }, [email, name, message]);
 
+
     async function submitForm() {
         if (!isFormValid) {
             setFormMessage('Form unable to validate, please try again.');
@@ -56,49 +57,40 @@ const Contact: React.FC<ContactProps> = (props) => {
         }
         try {
             setIsLoading(true);
-            const res = await fetch(
-                'https://api.henryheffernan.com/api/contact',
-                {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify({
-                        company,
-                        email,
-                        name,
-                        message,
-                    }),
-                }
-            );
-            // the response will be either {success: true} or {success: false, error: message}
-            const data = (await res.json()) as
-                | {
-                      success: false;
-                      error: string;
-                  }
-                | { success: true };
-            if (data.success) {
+            const res = await fetch('http://localhost:3000/api/send-email', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    company,
+                    email,
+                    name,
+                    message,
+                }),
+            });
+            const data = await res.json();
+    
+            if (res.ok) {
                 setFormMessage(`Message successfully sent. Thank you ${name}!`);
                 setCompany('');
                 setEmail('');
                 setName('');
                 setMessage('');
-                setFormMessageColor(colors.blue);
-                setIsLoading(false);
+                setFormMessageColor('blue');
             } else {
-                setFormMessage(data.error);
-                setFormMessageColor(colors.red);
-                setIsLoading(false);
+                setFormMessage(data.error || 'There was an error sending your message.');
+                setFormMessageColor('red');
             }
         } catch (e) {
-            setFormMessage(
-                'There was an error sending your message. Please try again.'
-            );
-            setFormMessageColor(colors.red);
+            console.error(e);
+            setFormMessage('There was an error sending your message. Please try again.');
+            setFormMessageColor('red');
+        } finally {
             setIsLoading(false);
         }
     }
+    
 
     useEffect(() => {
         if (formMessage.length > 0) {
