@@ -57,7 +57,7 @@ const Contact: React.FC<ContactProps> = (props) => {
         }
         try {
             setIsLoading(true);
-            const res = await fetch('http://localhost:3000/api/send-email', {
+            const res = await fetch('https://www.yesuballa.live/api/send-email', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
