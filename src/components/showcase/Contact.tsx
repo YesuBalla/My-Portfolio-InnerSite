@@ -48,6 +48,7 @@ const Contact: React.FC<ContactProps> = (props) => {
         }
     }, [email, name, message]);
 
+    
 
     async function submitForm() {
         if (!isFormValid) {
@@ -57,7 +58,7 @@ const Contact: React.FC<ContactProps> = (props) => {
         }
         try {
             setIsLoading(true);
-            const res = await fetch('https://www.yesuballa.live/api/send-email', {
+            const res = await fetch(`https://my-portfolio-backend-3poo.onrender.com/api/send-email`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
