@@ -131,7 +131,7 @@ const About: React.FC<AboutProps> = (props) => {
                     <Link to="/contact">contact page</Link> or shoot me an email
                     at{' '}
                     <a href="mailto:yesushakir@gmail.com">
-                        yesuballa@gmail.com
+                        yesushakir@gmail.com
                     </a>
                 </p>
             </div>

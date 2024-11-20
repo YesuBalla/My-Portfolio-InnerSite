@@ -10,76 +10,58 @@ const Experience: React.FC<ExperienceProps> = (props) => {
             <div style={styles.headerContainer}>
                 <div style={styles.header}>
                     <div style={styles.headerRow}>
-                        <h1>Hover</h1>
+                        <h1>NxtWave</h1>
                         <a
                             rel="noreferrer"
                             target="_blank"
-                            href={'https://hover.gg/'}
+                            href={'https://www.ccbp.in/'}
                         >
-                            <h4>www.hover.gg</h4>
+                            <h4>www.ccbp.in</h4>
                         </a>
                     </div>
                     <div style={styles.headerRow}>
-                        <h3>Frontend Engineer</h3>
+                        <h3>Teaching Assistant</h3>
                         <b>
-                            <p>Summer 2020 - Fall 2021</p>
+                            <p>Summer 2024 - Present</p>
                         </b>
                     </div>
                 </div>
             </div>
             <div className="text-block">
                 <p>
-                    Targeted towards online content creators and streamers
-                    looking to build a brand, Hover is the home of over 150K
-                    users. Written in Typescript using React, React-Native,
-                    Framer, Express, and Redux.
+                    Mentored over 200 students in the CCBP 4.0 program, 
+                    providing personalized guidance to enhance their understanding of 
+                    industry-relevant technologies and achieve certification readiness.
                 </p>
                 <br />
                 <ul>
                     <li>
                         <p>
-                            Architected and engineered the vertical scrolling
-                            discover player which, at its daily peak, was
-                            responsible for generating over 600,000 views across
-                            20,000 active users.
+                            Conducted interactive workshops and coding sessions to strengthen students' 
+                            practical skills, resulting in improved course completion rates and job readiness.
                         </p>
                     </li>
                     <li>
                         <p>
-                            Designed and implemented multiple features to
-                            increase app usability and user experience while
-                            ensuring the quality, maintainability and
-                            scalability of the front end as the user base grew
-                            by over 50,000.
+                            Supported curriculum delivery for programs like the Intensive Tech Job Track, 
+                            aligning student learning with proven industry frameworks.
                         </p>
                     </li>
                     <li>
                         <p>
-                            Coordinated major refactors targeted towards app
-                            optimization and performance resulting in a smoother
-                            user experience and accomplished by eliminating
-                            redundant re-renders and API calls by over 50%.
+                            Facilitated India’s Largest 4.0 Tech Student Community initiatives, fostering 
+                            collaboration and peer learning to accelerate growth.
                         </p>
                     </li>
                     <li>
                         <p>
-                            Directed and executed an internal migration of 3
-                            individual repositories to a single monorepo,
-                            greatly reducing overhead for developing new
-                            features, fixing bugs, and managing dependencies.
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                            Rebuilt the website with React and shared mobile app
-                            components allowing users to access a wide variety
-                            of app interactions entirely on the web, resulting
-                            in over 700,000 total site visits.
+                        Assisted in monitoring student progress through feedback and assessment tools, 
+                        driving a measurable improvement in learning outcomes.
                         </p>
                     </li>
                 </ul>
             </div>
-            <div style={styles.headerContainer}>
+            {/* <div style={styles.headerContainer}>
                 <div style={styles.header}>
                     <div style={styles.headerRow}>
                         <h1>BrACS</h1>
@@ -236,7 +218,7 @@ const Experience: React.FC<ExperienceProps> = (props) => {
                         </p>
                     </li>
                 </ul>
-            </div>
+            </div> */}
         </div>
     );
 };
@@ -292,4 +274,4 @@ const styles: StyleSheetCSS = {
 
 export default Experience;
 
-export {}
+// export {}

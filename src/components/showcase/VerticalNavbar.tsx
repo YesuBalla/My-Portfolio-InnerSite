@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react'; 
 import { Link } from '../general';
 import forHire from '../../assets/pictures/forHireGif.gif';
 import { useLocation, useNavigate } from 'react-router-dom';
@@ -39,11 +39,11 @@ const VerticalNavbar: React.FC<VerticalNavbarProps> = (props) => {
             <div style={styles.links}>
                 <Link containerStyle={styles.link} to="" text="HOME" />
                 <Link containerStyle={styles.link} to="about" text="ABOUT" />
-                {/* <Link
+                <Link
                     containerStyle={styles.link}
                     to="experience"
                     text="EXPERIENCE"
-                /> */}
+                />
                 <Link
                     containerStyle={Object.assign(
                         {},

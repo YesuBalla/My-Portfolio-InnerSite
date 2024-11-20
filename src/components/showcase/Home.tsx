@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from '../general';
+import { Link } from '../general'; 
 
 import forhire from '../../assets/pictures/forHireGif.gif';
 import { useNavigate } from 'react-router-dom';
@@ -21,11 +21,11 @@ const Home: React.FC<HomeProps> = (props) => {
             </div>
             <div style={styles.buttons}>
                 <Link containerStyle={styles.link} to="about" text="ABOUT" />
-                {/* <Link
+                <Link
                     containerStyle={styles.link}
                     to="experience"
                     text="EXPERIENCE"
-                /> */}
+                />
                 <Link
                     containerStyle={styles.link}
                     to="projects"
