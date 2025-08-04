@@ -5,7 +5,7 @@ import ghIcon from '../../assets/pictures/contact-gh.png';
 import inIcon from '../../assets/pictures/contact-in.png';
 import ResumeDownload from './ResumeDownload';
 
-export interface ContactProps {}
+export interface ContactProps { }
 
 // function to validate email
 const validateEmail = (email: string) => {
@@ -48,7 +48,7 @@ const Contact: React.FC<ContactProps> = (props) => {
         }
     }, [email, name, message]);
 
-    
+
 
     async function submitForm() {
         if (!isFormValid) {
@@ -58,7 +58,7 @@ const Contact: React.FC<ContactProps> = (props) => {
         }
         try {
             setIsLoading(true);
-            const res = await fetch(`https://my-portfolio-backend-3poo.onrender.com/api/send-email`, {
+            const res = await fetch(`https://my-portfolio-service-2m7f.onrender.com/api/send-email`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -71,7 +71,7 @@ const Contact: React.FC<ContactProps> = (props) => {
                 }),
             });
             const data = await res.json();
-    
+
             if (res.ok) {
                 setFormMessage(`Message successfully sent. Thank you ${name}!`);
                 setCompany('');
@@ -91,7 +91,7 @@ const Contact: React.FC<ContactProps> = (props) => {
             setIsLoading(false);
         }
     }
-    
+
 
     useEffect(() => {
         if (formMessage.length > 0) {
@@ -113,7 +113,7 @@ const Contact: React.FC<ContactProps> = (props) => {
                     />
                     <SocialBox
                         icon={inIcon}
-                        link={'https://www.linkedin.com/in/yesuballa//'}
+                        link={'https://www.linkedin.com/in/yesuballa/'}
                     />
                     {/* <SocialBox
                         icon={twitterIcon}
@@ -123,8 +123,8 @@ const Contact: React.FC<ContactProps> = (props) => {
             </div>
             <div className="text-block">
                 <p>
-                I am currently a recent graduate, but I'm eager to explore new opportunities. 
-                Please feel free to contact me via my personal email or use the form below to connect—I’d love to chat!
+                    I am currently a recent graduate, but I'm eager to explore new opportunities.
+                    Please feel free to contact me via my personal email or use the form below to connect—I’d love to chat!
                 </p>
                 <br />
                 <p>
@@ -172,7 +172,7 @@ const Contact: React.FC<ContactProps> = (props) => {
                     </label>
                     <input
                         style={styles.formItem}
-                        type="company"
+                        type="text"
                         name="company"
                         placeholder="Company"
                         value={company}
