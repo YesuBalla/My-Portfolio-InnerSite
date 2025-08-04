@@ -1,14 +1,14 @@
 import React from 'react';
 // @ts-ignore
-import nxtwatch from '../../../assets/pictures/projects/software/nxtwatch.mp4';
+import FinVisual from '../../../assets/pictures/projects/software/FinVisual.mp4';
 // @ts-ignore
 import computer from '../../../assets/pictures/projects/software/computer.mp4';
 // @ts-ignore
-import nxttrendz from '../../../assets/pictures/projects/software/nxttrendz.mp4';
+import Todo from '../../../assets/pictures/projects/software/Todo.mp4';
 import ResumeDownload from '../ResumeDownload';
 import VideoAsset from '../../general/VideoAsset';
 
-export interface SoftwareProjectsProps {}
+export interface SoftwareProjectsProps { }
 
 const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
     return (
@@ -33,7 +33,7 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                     creatively. Early in 2024, I knew I wanted to make an
                     interactive portfolio to aid my job search. I eventually got
                     the idea for this site around early May and began
-                    development early June. I have been developing it in parallel with my React course, and if you are reading this, 
+                    development early June. I have been developing it in parallel with my React course, and if you are reading this,
                     it is essentially complete.
                 </p>
                 <br />
@@ -56,7 +56,7 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                     <a
                         rel="noreferrer"
                         target="_blank"
-                        href="https://www.yesuballa.live/"
+                        href="https://my-portfolio-2yu6.onrender.com"
                     >
                         here
                     </a>{' '}
@@ -72,7 +72,7 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                         <a
                             rel="noreferrer"
                             target="_blank"
-                            href="https://www.yesuballa.live/"
+                            href="https://my-portfolio-2yu6.onrender.com"
                         >
                             <p>
                                 <b>[3D Site]</b> - yesuballa.live
@@ -128,49 +128,51 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                 </p>
             </div>
             <div className="text-block">
-                <h2>Nxt Watch(Youtube Clone)</h2>
+                <h2>FinVisual – Personal Finance Tracker</h2>
                 <br />
                 <br />
                 <p>
-                Implemented Nxt Watch application which is a clone for YouTube where users can log in and can see a list of
-                videos like Trending, Gaming, Saved videos, and also can search videos and view specific video details, and
-                users can toggle the theme (Light/Dark).
-                <br />
-                <br />
-                *Implemented Different pages like Login, Home, Trending, Gaming, Saved videos using React
-                components, props, state, lists, event handlers, form inputs.
-                <br />
-                <br />
-                *Authenticating by taking username, password and doing login post HTTP API Call.
-                <br />
-                <br />
-                *Persisted user login state by keeping jwt token in local storage, Sending it in headers of further API calls
-                to authorize the user.
-                <br />
-                <br />
-                *Implemented different routes for Login, Home, Trending, Gaming, Saved videos, Video item details
-                pages by using React Router components Route, Switch, Link.
-                <br />
-                <br />
-                *Redirecting to the login page if the user tries to open Home, Trending, Gaming, Saved videos, Video
-                item details routes which need authentication by implementing protected Route.
-                <br />
+                    Developed a secure full-stack web application using Next.js and MongoDB that enables users to manage personal finances through a clean,
+                    interactive dashboard with transaction tracking and dynamic visualizations of spending trends.
+                    <br />
+                    <br />
+                    *Implemented secure login with email/password and social logins (Google, GitHub) using NextAuth.
+                    <br />
+                    <br />
+                    *Designed protected REST APIs using Mongoose so users can safely add, update, delete, and
+                    view their own transactions.
+                    <br />
+                    <br />
+                    *Used Zustand for state management and styled the UI with Tailwind CSS and Shadcn for a responsive and accessible interface.
+                    <br />
+                    <br />
+                    *Added interactive pie and bar charts to visualize spending trends by category and over time.
+                    <br />
+                    <br />
+                    *Currently working on adding automated insights using data science techniques to help users
+                    better understand their spending behavior.
+                    <br />
+                    <br />
+                    *Developed a /api/seed-transactions route to instantly populate test data for demo and development.
+                    <br />
+                    <br />
+                    *More features are being added to enhance usability and insights.
+                    <br />
                 </p>
                 <br />
                 <div className="captioned-image">
-                    <VideoAsset src={nxtwatch} />
+                    <VideoAsset src={FinVisual} />
                     <div style={styles.caption}>
                         <p>
                             <sub>
-                                <b>Figure 2: </b> The Nxt Watch application is a professional YouTube clone with similar video streaming features.
+                                <b>Figure 2: </b> FinVisual is a professional personal finance tracker with interactive dashboards and insightful spending analytics.
                             </sub>
                         </p>
                     </div>
                 </div>
                 <p>
-                <br />
-                Technologies used: React JS, JS, CSS, Bootstrap, Routing, REST API Calls, Local Storage, JWT Token,
-                Authorization, Authentication.
+                    <br />
+                    Tech Stack: Next.js 14, MongoDB, NextAuth, Zustand, Tailwind CSS, Shadcn, Axios, Chart.js
                 </p>
                 <br />
                 <h3>Links:</h3>
@@ -179,10 +181,10 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                         <a
                             rel="noreferrer"
                             target="_blank"
-                            href="https://yesuwatch.ccbp.tech/"
+                            href="https://personal-finance-visualizer-wheat-two.vercel.app/signin"
                         >
                             <p>
-                                <b>[Site]</b> - Nxt Watch
+                                <b>[Site]</b> - FinVisual
                             </p>
                         </a>
                     </li>
@@ -190,10 +192,10 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                         <a
                             rel="noreferrer"
                             target="_blank"
-                            href="https://github.com/YesuBalla/Nxt-Watch-App.git"
+                            href="https://github.com/YesuBalla/Personal-Finance-Visualizer.git"
                         >
                             <p>
-                                <b>[GitHub]</b> - Nxt Watch
+                                <b>[GitHub]</b> - FinVisual
                                 Assets Repository
                             </p>
                         </a>
@@ -201,37 +203,45 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                 </ul>
             </div>
             <div className="text-block">
-                <h2>Nxt-Trendz(ECommerce:Clone-Amazon,Flipkart)</h2>
+                <h2>ToDo App – MERN Stack Task Manager</h2>
                 <br />
                 <p>
-                Implemented Nxt Trendz application which is a clone for ECommerce applications like Amazon, Flipkart where
-                users can login and can see list of products with search, filters, sort by, etc..
-                <br />
-                <br />
-                *Implemented Different pages and routes for Login, Products, Product details using React Router
-                components Route, Switch, Link, props, state, lists, event handlers, form inputs.
-                <br />
-                <br />
-                *Authenticating and authorizing users by taking username, password and doing login POST HTTP API
-                Call and implementing filters by sending them as query parameters to product api calls.
-                <br />
-                <br />
-                *Persisted user login state by keeping jwt token in local storage, Sending it in headers of further api calls
-                to authorize the user. 
+                    Engineered a fully featured, production-ready task management web application from the ground up using the MERN stack (MongoDB, Express.js, React.js, Node.js),
+                    delivering seamless full-stack functionality with user authentication, task operations, and responsive UI.
+                    <br />
+                    <br />
+                    *Enabled secure user registration, login, and password change functionality using JWT,
+                    bcrypt for hashing, and JoiPasswordComplexity for validation.
+                    <br />
+                    <br />
+                    *Designed modular RESTful APIs with Express and Mongoose to allow users to create, update, delete, and view personal tasks securely.
+                    <br />
+                    <br />
+                    *Built an interactive frontend using React with React-Bootstrap for responsive design and floating input labels.
+                    <br />
+                    *Implemented task pagination and CSV file upload support to allow batch task creation on both client and server.
+                    <br />
+                    <br />
+                    *Used localStorage to persist login sessions and reload authenticated views dynamically.
+                    <br />
+                    <br />
+                    *Deployed backend on Render and frontend on Netlify with a polished UI and smooth user experience.
+                    <br />
+                    <br />
+                    *Future updates include drag-and-drop task reordering and due-date reminders.
+                    <br />
                 </p>
                 <br />
                 <div className="captioned-image">
-                    <VideoAsset src={nxttrendz} />
+                    <VideoAsset src={Todo} />
                     <p style={styles.caption}>
                         <sub>
-                            <b>Figure 3:</b> A sleek eCommerce app with user login, product listings, 
-                            search, and sorting features.
+                            <b>Figure 3:</b> ToDo App is a modern task management system with secure authentication and intuitive features for organizing daily activities.
                         </sub>
                     </p>
                 </div>
                 <p>
-                Technologies used: React JS, JS, CSS, Bootstrap, Routing, REST API Calls, Local Storage, JWT Token,
-                Authorization, Authentication
+                    Tech Stack: MongoDB, Express.js, React.js, Node.js, JWT, React-Bootstrap, Axios, CSV-Parser
                 </p>
                 <br />
                 <h3>Links:</h3>
@@ -240,10 +250,10 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                         <a
                             rel="noreferrer"
                             target="_blank"
-                            href="https://nxttrndsbyk.ccbp.tech/"
+                            href="https://todo-app-yesuballa.netlify.app"
                         >
                             <p>
-                                <b>[Site]</b> - Nxt Trendz
+                                <b>[Site]</b> - ToDo App
                             </p>
                         </a>
                     </li>
@@ -251,19 +261,15 @@ const SoftwareProjects: React.FC<SoftwareProjectsProps> = (props) => {
                         <a
                             rel="noreferrer"
                             target="_blank"
-                            href="https://chrome.google.com/webstore/detail/skip-the-scroll/mfehannpjmgfagldoilpngeoecdfgmnd"
+                            href="https://github.com/YesuBalla/ToDoApp-MERN.git"
                         >
                             <p>
-                                <b>[GitHub]</b> - Nxt Trendz
+                                <b>[GitHub]</b> - ToDo
                                 Assets Repository
                             </p>
                         </a>
                     </li>
                 </ul>
-                <p>
-                Technologies used: React JS, JS, CSS, Bootstrap, Routing, REST API Calls, Local Storage, JWT Token,
-                Authorization, Authentication
-                </p>
             </div>
             <ResumeDownload />
         </div>
